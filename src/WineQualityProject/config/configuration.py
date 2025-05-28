@@ -65,7 +65,10 @@ class ConfigurationManager:
         config = self.config.model_trainer
         params = self.params.ElasticNet
         schema =  self.schema.TARGET_COLUMN
+<<<<<<< HEAD
         print("Schema:", self.schema.TARGET_COLUMN)
+=======
+>>>>>>> 4286e3ba86f1203d9507d357bf8e4e074ec06820
 
         create_directories([config.root_dir])
 

@@ -23,7 +23,11 @@ class DataTransformationTrainingPipeline:
                 data_transformation.train_test_spliting()
 
             else:
+<<<<<<< HEAD
                 raise Exception("Your data schema is not valid")
+=======
+                raise Exception("You data schema is not valid")
+>>>>>>> 4286e3ba86f1203d9507d357bf8e4e074ec06820
 
         except Exception as e:
             print(e)

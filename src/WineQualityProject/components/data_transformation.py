@@ -19,10 +19,13 @@ class DataTransformation:
     def train_test_spliting(self):
         data = pd.read_csv(self.config.data_path)
 
+<<<<<<< HEAD
         # Drop 'Id' column if present
         if 'Id' in data.columns:
             data = data.drop(columns=['Id'])
         
+=======
+>>>>>>> 4286e3ba86f1203d9507d357bf8e4e074ec06820
         # Split the data into training and test sets. (0.75, 0.25) split.
         train, test = train_test_split(data)
 
@@ -32,6 +35,10 @@ class DataTransformation:
         logger.info("Splited data into training and test sets")
         logger.info(train.shape)
         logger.info(test.shape)
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4286e3ba86f1203d9507d357bf8e4e074ec06820
         print(train.shape)
         print(test.shape)
